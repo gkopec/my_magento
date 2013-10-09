@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <global>   
+        <modules>
+            <Polcode_Helloworld>
+                <version>0.1.0</version>
+            </Polcode_Helloworld>
+        </modules>
+        <blocks>
+            <helloworld>
+                <class>Polcode_Helloworld_Block</class>
+            </helloworld>
+        </blocks>
+        <models>
+            <catalog>
+                <rewrite>
+                    <layer>Polcode_Helloworld_Model_Layer</layer>
+                </rewrite>
+            </catalog>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Polcode_Helloworld</module>
+                    <frontName>new_products</frontName>
+                </args>
+            </helloworld>
+        </routers>
+    </frontend>
+</config> 

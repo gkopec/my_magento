@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Polcode_Helloworld>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Polcode_Helloworld>
+    </modules>
+</config>       

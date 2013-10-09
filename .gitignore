@@ -1,0 +1,13 @@
+.htaccess
+var/cache/**/*
+var/session/**/*
+var/session/*
+var/log/*
+var/locks/*
+var/report/*
+errors/local.xml
+app/etc/local.xml
+media/catalog/product/cache/**/*
+media/js/*
+media/css/*.css
+nbproject
