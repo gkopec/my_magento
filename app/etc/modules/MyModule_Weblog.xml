@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <MyModule_Weblog>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MyModule_Weblog>
+    </modules>
+</config>       

@@ -28,6 +28,7 @@
                     <frontName>new_products</frontName>
                 </args>
             </helloworld>
+            
         </routers>
     </frontend>
 </config> 
