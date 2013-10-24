@@ -1,6 +1,6 @@
 <?php
 
-class MyModule_Weblog_Model_Blogpost extends Mage_Core_Model_Abstract
+class GK_Weblog_Model_Blogpost extends Mage_Core_Model_Abstract
 {
     protected function _construct() {
         

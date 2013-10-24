@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
+    <modules>
+        <GK_Weblog>
+            <version>0.1.0</version>
+        </GK_Weblog>
+    </modules>
     <global>
-        <modules>
-            <MyModule_Weblog>
-                <version>0.1.0</version>
-            </MyModule_Weblog>
-        </modules>
         <models>
             <weblog>
-                <class>MyModule_Weblog_Model</class>
+                <class>GK_Weblog_Model</class>
                 <!-- 
                 need to create our own resource, can't just
                 use core_mysql4
@@ -16,7 +16,7 @@
                 <resourceModel>weblog_mysql4</resourceModel>
             </weblog>
             <weblog_mysql4>
-                <class>MyModule_Weblog_Model_Mysql4</class>
+                <class>GK_Weblog_Model_Mysql4</class>
                 <entities>
                     <blogpost>
                         <table>blog_posts</table>
@@ -25,6 +25,11 @@
             </weblog_mysql4>
         </models>
         <resources>
+            <weblog_setup>
+                <setup>
+                    <module>GK_Weblog</module>
+                </setup>
+            </weblog_setup>
             <weblog_write>
                 <connection>
                     <use>core_write</use>
@@ -42,10 +47,15 @@
             <weblog>
                 <use>standard</use>
                 <args>
-                    <module>MyModule_Weblog</module>
+                    <module>GK_Weblog</module>
                     <frontName>weblog</frontName>
                 </args>
             </weblog>
         </routers>
+        <layout>
+            <weblog>
+                <file>weblog.xml</file>
+            </weblog>
+        </layout>
     </frontend>       
 </config>

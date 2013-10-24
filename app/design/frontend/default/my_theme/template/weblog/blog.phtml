@@ -1,0 +1,7 @@
+<?php
+$posts = Mage::getModel('weblog/blogpost')->getCollection();
+echo '<h1>Lista wszystkich postów</h1>';
+foreach ($posts as $blog_post) {
+    echo '<div><h3>' . $blog_post->getTitle() . '</h3>';
+    echo nl2br($blog_post->getPost()), '</div>';
+}

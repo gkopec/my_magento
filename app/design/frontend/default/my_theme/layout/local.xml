@@ -1,16 +1,20 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">  
-    	<default>        
-		
-		<reference name="root">
-			<action method="setTemplate">
-				<template>page/2columns-left.phtml</template>
-				<action method="setIsHandle">
-					<applied>1</applied>
-				</action>
-			</action>          
-		</reference>
+    <default>        
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+                <action method="setIsHandle">
+                    <applied>1</applied>
+                </action>
+            </action>          
+        </reference>
     </default> 
+    <weblog_index_index>
+        <reference name="content">
+            <block type="page/html" name="weblog" template="weblog/blog.phtml" />
+        </reference>
+    </weblog_index_index>
     <helloworld_index_index>
         <reference name="content">
             <block type="helloworld/newlist" name="product_new_list" template="catalog/product/list.phtml">

@@ -1,8 +1,8 @@
 <config>
     <modules>
-        <MyModule_Weblog>
+        <GK_Weblog>
             <active>true</active>
             <codePool>local</codePool>
-        </MyModule_Weblog>
+        </GK_Weblog>
     </modules>
 </config>       
