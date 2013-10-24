@@ -10,11 +10,7 @@
             </action>          
         </reference>
     </default> 
-    <weblog_index_index>
-        <reference name="content">
-            <block type="page/html" name="weblog" template="weblog/blog.phtml" />
-        </reference>
-    </weblog_index_index>
+
     <helloworld_index_index>
         <reference name="content">
             <block type="helloworld/newlist" name="product_new_list" template="catalog/product/list.phtml">

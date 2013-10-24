@@ -26,5 +26,4 @@ class GK_Weblog_IndexController extends Mage_Core_Controller_Front_Action {
         $blogpost->save();
         echo 'post created';
     }
-
 }

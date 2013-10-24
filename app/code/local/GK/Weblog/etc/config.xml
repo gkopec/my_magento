@@ -53,9 +53,11 @@
             </weblog>
         </routers>
         <layout>
-            <weblog>
-                <file>weblog.xml</file>
-            </weblog>
+            <updates>
+                <weblog>
+                    <file>weblog.xml</file>
+                </weblog>
+            </updates>
         </layout>
     </frontend>       
 </config>
