@@ -24,6 +24,17 @@
                 </entities>       
             </weblog_mysql4>
         </models>
+        <helpers>
+            <weblog>
+                <class>GK_Weblog_Helper</class>
+            </weblog>
+        </helpers>
+        <blocks>
+            <weblog>
+                <class>GK_Weblog_Block</class>
+            </weblog>
+        </blocks>
+
         <resources>
             <weblog_setup>
                 <setup>
@@ -59,5 +70,16 @@
                 </weblog>
             </updates>
         </layout>
-    </frontend>       
+    </frontend>
+    <admin>
+        <routers>
+            <gk_weblog>
+                <use>admin</use>
+                <args>
+                    <module>GK_Weblog</module>
+                    <frontName>weblog</frontName>
+                </args>
+            </gk_weblog>
+        </routers>
+    </admin>     
 </config>

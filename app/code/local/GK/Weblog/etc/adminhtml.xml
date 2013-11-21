@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <weblog module="weblog">
+            <title>Weblog</title>
+            <sort_order>71</sort_order>
+            <children>
+                <items module="weblog">
+                    <title>Manage Posts</title>
+                    <sort_order>0</sort_order>
+                    <action>weblog/admin</action>
+                </items>
+            </children>
+        </weblog>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <Weblog>
+                        <title>Weblog</title>
+                        <sort_order>10</sort_order>
+                    </Weblog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -15,6 +15,7 @@ class GK_Weblog_IndexController extends Mage_Core_Controller_Front_Action {
         echo("Loading the blogpost with an ID of " . $params['id']);
         $blogpost->load($params['id']);
         $data = $blogpost->getData();
+        Mage::Log($data);
         var_dump($data);
         var_dump($data = $blogpost->getOrigData());
     }
